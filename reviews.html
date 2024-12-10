@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Reviews</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Thai Garden</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="submit-recipe.html">Submit a Recipe</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="breakfast.html">Breakfast</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="lunch.html">Lunch</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="dinner.html">Dinner</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <h2 class="text-center" style="color: #ffff;">User  Reviews</h2>
+        <form id="reviewForm">
+            <div class="form-group">
+                <label for="reviewText" style="color: #ffff;">Leave a Review</label>
+                <textarea class="form-control" id="reviewText" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-warning">Submit Review</button>
+        </form>
+        <div id="reviewList" class="mt-4"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
